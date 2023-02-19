@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>example one</title>
+<style>
+
+nav{
+
+width: 100%;
+height: 40px;
+    background: purple;
+    top: 0px;
+    /* para dejar fijo el nav */
+    position: fixed;
+    /* se usa para poner por capaz los componentes en este caso el nav va por encima ya que tiene un numero mayor a las tarjetas que es de 4 */
+z-index: 5;
+
+}
+
+.container{
+background: palegreen;
+    width: 100%;
+    display: flex;
+    /* se usa para que el objeto se mueva pero dependiendo del exterior */
+ position: relative;
+ top: 20px;
+    justify-content:space-evenly;
+    z-index: 4;
+
+}
+
+/* se usa para que con el selector card le de este estiloa todas las tarjetas */
+    .card{
+       width: 300px;
+       height: 400px; 
+        background:#060505;
+        /* para que la tarjeta tenga borde redondo*/
+        border-radius: 20px;
+        /* todo lo que salga lo va esconder(img) */
+    overflow: hidden;
+    }
+/* se da el tamaño a la img */
+    .card  img {
+        width: 100%;
+    }
+  /* le da el color y posicion al las letras */
+    .card p {
+        /* alinear los textos de la tarjeta al centro  */
+        text-align: center;
+        color: aliceblue;
+        font-family: Arial;
+    }
+/* para seleccionar un p en especifico */
+    .card p:nth-child(2){
+       
+        font-style: oblique;
+        font-weight: 800
+    }
+
+    .card p:nth-child(3){
+        font-style: oblique; 
+    }
+ 
+ #numero1 {
+      
+     /* se usa para que el objeto se mueva pero dentro de su contenedor */
+     position: absolute;
+        top: 20px;
+        right: 10px;
+        left: 10px;
+}
+#numero2 {
+      
+        /* se usa para que el objeto se mueva pero dentro de su contenedor */
+        position: absolute;
+        top: 20px;
+        right: 70px;
+        left: 350px;
+}
+#numero3 {
+    
+        /* se usa para que el objeto se mueva pero dentro de su contenedor */
+        position: absolute;
+        top: 20px;
+        right: 140px;
+        left: 700px;
+}
+#numero4 {
+      
+        /* se usa para que el objeto se mueva pero dentro de su contenedor */
+        position: absolute;
+        top: 20px;
+        right: 280px;
+        left: 1040px;
+}
+#numero5 {
+       
+        /* se usa para que el objeto se mueva pero dentro de su contenedor */
+        position: absolute;
+        top: 450px;
+        right: 10px;
+        left: 10px;
+}
+#numero6 {
+      
+        /* se usa para que el objeto se mueva pero dentro de su contenedor */
+        position: absolute;
+        top: 450px;
+        right: 70px;
+        left: 350px;
+}
+#numero7 {
+      
+        /* .se usa para que el objeto se mueva pero dentro de su contenedor */
+        position: absolute;
+        top: 450px;
+        right: 140px;
+        left: 700px;
+}
+#numero8 {
+       
+        /* se usa para que el objeto se mueva pero dentro de su contenedor */
+        position: absolute;
+        top: 450px;
+        right: 280px;
+        left: 1040px;
+}
+
+
+body{
+
+    margin: 0;
+}
+
+</style>
+
+</head>
+<body>
+        <nav>s </nav>
+    
+<section class="container">
+
+    <div class="card" id="numero1">
+        <img src="https://occ-0-41-1380.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABeye-_h6TnYgVo4F5D5G_jY9q-PjpiDXwYV4l7HlJWYxGLLEYzEYwXfNJbKzKb_f5oo_5pq0BxWibxlLXaISCE-FjMkOGLFnCFtq9Khrtf5h1Y9w9vFxg4db.jpg?r=070" alt="no img">
+    <p>MIDNIGHT GOSPEL</p>
+    <p>Capitulo 1 </p>
+    <p>No hay drogas buenas o malas, son sustancias quimicas que ni son buenas , ni osn malas , solo existen , las hemos creado o son naturales y el problema es , la relacion que el hombre tiene con la sustancia, ese el es el problema.</p>
+    </div>
+
+    <div class="card" id="numero2">
+        <img src="https://m.media-amazon.com/images/M/MV5BNDM1M2M2OTAtNzM3OS00M2M3LTk3YmUtNGIzMmU3NDg1MjgyXkEyXkFqcGdeQXVyMTE3MTA1ODQ1._V1_.jpg" alt="no img">
+    <p>MIDNIGHT GOSPEL</p>
+    <p>Capitulo 2 </p>
+    <p>El amor significa ,que tan feliz puedes hacer a la otra persona.
+       piensa en la generosidad ,cuando piensas en esa persona y quieres
+        darle algo , eso es lo que es</p>
+    </div>
+
+<div class="card" id="numero3">
+        <img src="https://showsnob.com/files/image-exchange/2016/04/ie_46451.jpeg" alt="no img">
+    <p>MIDNIGHT GOSPEL</p>
+    <p>Capitulo 3 </p>
+    <p>Cualquier cosa en la que enfoquemos nuestra atencion, es la direccion en la que nuestra energia va fluir.</p>
+    </div>
+
+    <div class="card" id="numero4">
+        <img src="https://www.lionsroar.com/wp-content/uploads/2020/04/trudy-and-clancy1-1-600x315-cropped.jpg" alt="no img">
+    <p>MIDNIGHT GOSPEL</p>
+    <p>Capitulo 4 </p>
+    <p>A menudo , lo mejor que podemos hacer es pensar en el perdor, como una forma de liberar tu corazon de los estados de rencor, resentimiento, ira y mala voluntad.</p>
+    </div>
+
+    <div class="card" id="numero5">
+        <img src="https://64.media.tumblr.com/9603a5ac27b032ec26da0db6a99ea24c/101048e3fb3d0bc5-fc/s1280x1920/c11c0d7029ffcc114c51cacedb9264d4c2893835.png" alt="no img">
+    <p>MIDNIGHT GOSPEL</p>
+    <p>Capitulo 5 </p>
+    <p>Vivimos en un universo donde el tiempo existe y por lo tanto todo se desintegrara y desaparecera , 
+        y el sufrimiento de eso es ... insoportable.</p>
+    </div>
+
+    <div class="card" id="numero6">
+        <img src="https://images2.minutemediacdn.com/image/fetch/w_2000,h_2000,c_fit/https%3A%2F%2Fshowsnob.com%2Ffiles%2Fimage-exchange%2F2016%2F04%2Fie_46453.jpeg" alt="no img">
+    <p>MIDNIGHT GOSPEL</p>
+    <p>Capitulo 6 </p>
+    <p>SILENCE ,giving you room to listen, STILLNESS, giving you room to feel , SPACIOUSNESS ,just giving you room.</p>
+    </div>
+
+
+    <div class="card"id="numero7">
+        <img src="https://rollingstone.uol.com.br/media/_versions/midnight-gospel-netflix-foto-reproducao_widelg.jpg" alt="no img">
+    <p>MIDNIGHT GOSPEL</p>
+    <p>Capitulo 7 </p>
+    <p>Considero que lo mejor que podrias hacer por ti, en toda tu vida... es estar super presente.</p>
+    </div>
+
+    <div class="card" id="numero8" >
+        <img src="https://wallpapers.com/images/hd/the-midnight-gospel-mother-s-advice-7ohm36e0awpzkpyr.jpg" alt="no img">
+    <p>MIDNIGHT GOSPEL</p>
+    <p>Capitulo 8 </p>
+    <p>No hay forma de detener un corazon roto.¿Que haces al respecto?. Pues lloras.</p>
+    </div>
+
+    
+</section>
+
